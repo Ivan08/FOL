@@ -1,0 +1,29 @@
+/* This is just an example.  You shouldn't do this. */
+#fast_open_link-hello
+{
+}
+#tree
+{
+background-color: #EEEEEE;
+word-wrap: break-word;
+max-width:200px;
+display:inline-block;
+white-space: -moz-pre-wrap;
+}
+#fast_open_link-toolbar-button
+{
+  list-style-image: url("chrome://fast_open_link/skin/toolbar-button.png");
+  -moz-image-region: rect(0px 24px 24px 0px);
+}
+#fast_open_link-toolbar-button:hover
+{
+  -moz-image-region: rect(24px 24px 48px  0px);
+}
+[iconsize="small"] #fast_open_link-toolbar-button
+{
+  -moz-image-region: rect( 0px 40px 16px 24px);
+}
+[iconsize="small"] #fast_open_link-toolbar-button:hover
+{
+  -moz-image-region: rect(24px 40px 40px 24px);
+}

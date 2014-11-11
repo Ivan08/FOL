@@ -1,0 +1,5 @@
+content   fast_open_link                 chrome/content/
+skin      fast_open_link   classic/1.0   chrome/skin/
+locale    fast_open_link   en-US         chrome/locale/en-US/
+overlay	chrome://browser/content/browser.xul	chrome://fast_open_link/content/ff-overlay.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://fast_open_link/skin/overlay.css

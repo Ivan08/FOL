@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://fast_open_link/skin/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script src="an.js"/>
+  <!-- Contents go here. -->
+<box onkeypress="filter()">
+	<button label="Load link" onclick="load()"/>
+	<button label="Open select" onclick="open_tab()"/>
+	<button label="Clear list" onclick="clear_tree()"/>
+	<textbox id="filter_text" onchange="filter()"/>
+</box>
+<hbox>
+<label id="count" value="Total link: None"/><label id="count_select" value="Count link: None"/>
+</hbox>
+<label value="Link:" id="lab"/>
+<!--<vbox id="box"></vbox>-->
+			<tree id="linksTree" 
+						flex="1"
+						flags="dont-build-content"
+						hidecolumnpicker="true"
+						treelines="true"
+						seltype="multiple"
+						persist="scrollPos selectedHost selectedPath selectedName sortDirection sortResource hidden"
+						editable="false"
+						enableColumnDrag="true"
+						scrollPos=""
+						seletedHost=""
+						selectedPath=""
+						selectedName=""
+						dragable="false"
+						onselect="count_select()"
+			>
+			  <treecols>
+			    <treecol id="title" label="Title" sort="?title" flex="2" 
+								class="sortDirectionIndicator"
+								sortDirection="ascending" 
+								sortActive="true"/>
+			    <treecol id="url" label="URL" flex="1" sort="?url" class="sortDirectionIndicator"/>
+			  </treecols>
+			
+			  <treechildren id="my_tree_children" class="tree">
+			   <!--<treeitem id="Content" class="cookiesTree">			   </treeitem>-->
+			  </treechildren>
+			</tree>
+<script>load();</script>
+</window>

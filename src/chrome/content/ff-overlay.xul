@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://fast_open_link/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://fast_open_link/locale/overlay.dtd">
+<overlay id="fast_open_link-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="ff-overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="fast_open_link-strings" src="chrome://fast_open_link/locale/overlay.properties"/>
+  </stringbundleset>
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="fast_open_link-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+                   label="&fast_open_linkToolbarButton.label;" tooltiptext="&fast_open_linkToolbarButton.tooltip;"
+                   oncommand="fast_open_link.onToolbarButtonCommand()"/>
+  </toolbarpalette>
+<!--  <toolbox id="navigator-toolbox">    <toolbar class="chromeclass-toolbar" toolbarname="&fast_open_linkToolbar.name;" customizable="true" id="fast_open_link-toolbar">      <label value="&fast_open_linkToolbar.label;"/>    </toolbar>  </toolbox> -->
+</overlay>

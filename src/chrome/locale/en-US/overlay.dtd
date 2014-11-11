@@ -1,0 +1,8 @@
+<!ENTITY fast_open_link.label "Your localized menuitem">
+<!ENTITY fast_open_linkContext.label "Your Menuitem">
+<!ENTITY fast_open_linkContext.accesskey "Y">
+<!ENTITY fast_open_linkToolbarButton.label "Fast open link">
+<!ENTITY fast_open_linkToolbarButton.tooltip "Fast open link">
+<!ENTITY fast_open_linkSidebar.label "Your Sidebar">
+<!ENTITY fast_open_linkToolbar.name  "example">
+<!ENTITY fast_open_linkToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &fast_open_linkToolbar.name;">
